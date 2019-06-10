@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorbackground">
+        <RelativeLayout
+            android:id="@+id/action_bar_in_main"
+            android:background="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title_text_view_in_main"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/profile_image_view_in_main_activity"
+                    android:src="@drawable/profile_image_view_in_activity_live_alone_image1"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/name_text_view_in_main_activity"
+                    android:layout_margin="5dp"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/filter_button"
+                    android:background="@drawable/filter_button_image1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/live_alone_add_or_check_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/live_alone_add_or_check_button_image1" />
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/logout_button"
+                    android:background="@drawable/logout_button_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_weight="1"
+            android:id="@+id/main_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="0dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/hiring_fragment_button"
+                android:layout_width="93dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/hiring_fragment_button_image1" />
+            <Button
+                android:id="@+id/message_fragment_button"
+                android:background="@drawable/message_fragment_button_image1"
+                android:layout_weight="1"
+                android:layout_width="93dp"
+                android:layout_height="45dp" />
+            <Button
+                android:id="@+id/my_page_fragment_button"
+                android:background="@drawable/my_page_fragment_button_image1"
+                android:layout_weight="1"
+                android:layout_width="93dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_bar_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:textSize="15sp"
+            android:text="데이터를 불러오는 중입니다…"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

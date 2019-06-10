@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="live_alone_types">
+        <item>한식</item>
+        <item>중식</item>
+        <item>치킨/피자</item>
+        <item>일식</item>
+        <item>분식</item>
+    </string-array>
+
+    <string-array name="locations">
+        <item >서울</item>
+        <item >부산</item>
+        <item >인천</item>
+        <item >대구</item>
+        <item >대전</item>
+        <item >경기도</item>
+        <item >경상도</item>
+        <item >전라도</item>
+        <item >강원도</item>
+        <item >충청도</item>
+    </string-array>
+
+</resources>
